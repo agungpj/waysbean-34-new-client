@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.cdnfonts.com/css/product-sans");
+@font-face {
+  font-family: "Freight";
+  src: local("Freight"),
+    url(../fonts/Freight-Sans-Black-SC.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Black";
+  src: local("Avenir-Black"), url(../fonts/Avenir-Black.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Book";
+  src: local("Avenir-Book"), url(../fonts/Avenir-Book.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Roman";
+  src: local("Avenir-Roman"), url(../fonts/Avenir-Roman.otf) format("truetype");
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.img-contact {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: cover !important;
+}
+
+.img-chat {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: cover !important;
+}
+
+.text-contact {
+  font-size: 14px;
+}
+
+.text-contact-chat {
+  color: #000000;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact img {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact:hover {
+  background-color: #DFDFDF;
+  transition: 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact:active {
+  background-color: #DFDFDF;
+  transition: 0.3s;
+}
+
+.contact-active {
+  background-color: #DFDFDF;
+  border-radius: 5px;
+}
+
+.input-message {
+  width: 100%;
+  height: 90%;
+  background: rgba(171, 171, 171, 0.15);
+  border: none;
+  color: #000000;
+}
+
+.chat-me {
+  position: relative;
+  background: #ffff;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 400px;
+}
+
+.chat-me::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  border-top: 15px solid transparent;
+  border-left: 20px solid #ffff;
+  border-bottom: 15px solid transparent;
+}
+
+.chat-other {
+  position: relative;
+  background: #ffff;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 400px;
+}
+
+.chat-other::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  border-top: 15px solid transparent;
+  border-right: 20px solid #ffff;
+  border-bottom: 15px solid transparent;
+}
